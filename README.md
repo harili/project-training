@@ -14,14 +14,14 @@ Expected functionalities:
 ```
 
 
-And in this exercise, I have to propose a suitable object modeling of the entities needed for these functionalities. With unit tests in addition
+And in this exercise, you have to propose a suitable object modeling of the entities needed for these functionalities. With unit tests in addition
 
 
-### Etape 2 - API Adapter
+### Step 2 - API Adapter
 
 Develop functionalities in an API (Web API .NET for example)
 
-### Etape 3 - Persistance adapter
+### Step 3 - Persistance adapter
 
 Implementation of persistance adapter of your choice (SQLlite, H2, ...).
 
