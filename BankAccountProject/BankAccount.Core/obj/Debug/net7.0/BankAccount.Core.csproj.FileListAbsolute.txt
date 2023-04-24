@@ -1,0 +1,12 @@
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.deps.json
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.dll
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.pdb
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.csproj.AssemblyReference.cache
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.AssemblyInfoInputs.cache
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.AssemblyInfo.cs
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.csproj.CoreCompileInputs.cache
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.dll
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\refint\BankAccount.Core.dll
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.pdb
+C:\Users\ilies\OneDrive\Bureau\Ilies-CHARFAOUI-back-bankaccount\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\ref\BankAccount.Core.dll
