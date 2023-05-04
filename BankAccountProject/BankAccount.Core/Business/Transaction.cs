@@ -1,16 +1,33 @@
-﻿using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System;
-using System.Transactions;
-
-namespace BankAccount.Core.Business
+﻿namespace BankAccount.Core.Business
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Transaction
     {
-        public int Id { get; set; }
-        public int AccountId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Id { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string AccountId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Type { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public decimal Amount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public DateTime Date { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int State { get; set; }
     }
 }
