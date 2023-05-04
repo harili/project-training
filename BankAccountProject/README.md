@@ -1,10 +1,8 @@
 # 💰 **Docker - BankAccountProject** 💰
 
-# Étapes à suivre pour la mise en place du projet sous Docker :
+# Steps to launch Docker Project :
 
-### Cloner le projet en local sur votre PC
-
-Cloner le projet de façon à pouvoir l'utiliser.
+### Clone the project
 
 ```
 1. Go to desktop
