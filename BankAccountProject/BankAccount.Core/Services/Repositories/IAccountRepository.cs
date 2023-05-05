@@ -7,9 +7,9 @@ namespace BankAccount.Core.Services.Repositories
     /// </summary>
     public interface IAccountRepository
     {
-        Task<Data.TransactionState> Deposit(string accountId, int type, decimal amount);
-        Task<Data.TransactionState> Withdraw(string accountId, int type, decimal amount);
+        Task<Data.TransactionState> DepositAsync(string accountId, decimal amount);
+        Task<Data.TransactionState> WithdrawAsync(string accountId, decimal amount);
         decimal GetBalance(string accountId);
-        Task<List<Transaction>> GetPreviousTransactions(string accountId, int? type = null);
+        Task<List<Transaction>> GetPreviousTransactionsAsync(string accountId, int? type = null);
     }
 }

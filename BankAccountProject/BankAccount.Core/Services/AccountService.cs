@@ -21,7 +21,7 @@ namespace BankAccount.Core.Services
         /// <param name="context"></param>
         public AccountService(BankAccountDbContext context)
         {
-            _ctx = context;
+            _ctx = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         /// <summary>
@@ -31,25 +31,25 @@ namespace BankAccount.Core.Services
         /// <param name="type"></param>
         /// <param name="amount"></param>
         /// <returns></returns>
-        public async Task<Core.Data.TransactionState> Deposit(string accountId, int type, decimal amount)
+        public async Task<Data.TransactionState> DepositAsync(string accountId, decimal amount)
         {
             var account = await _ctx.Accounts.Where(x => x.Id == accountId).FirstOrDefaultAsync();
             if (account != null)
             {
                 if (amount <= 0)
-                    return Core.Data.TransactionState.Failure;
+                    return Data.TransactionState.Failure;
 
                 account.Balance += amount;
                 account.UpdatedAt = DateTime.Now;
 
-                AddTransaction(accountId, type, amount);
+                AddTransaction(accountId, Data.TransactionType.Deposit, amount);
 
                 await _ctx.SaveChangesAsync();
 
-                return Core.Data.TransactionState.Success;
+                return Data.TransactionState.Success;
             }
 
-            return Core.Data.TransactionState.Failure;
+            return Data.TransactionState.Failure;
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace BankAccount.Core.Services
         /// <param name="accountId"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public async Task<List<Transaction>> GetPreviousTransactions(string accountId, int? type = null)
+        public async Task<List<Transaction>> GetPreviousTransactionsAsync(string accountId, int? type = null)
         {
             var query = _ctx.Transactions.Where(x => x.AccountId == accountId);
 
@@ -97,21 +97,21 @@ namespace BankAccount.Core.Services
         /// <param name="type"></param>
         /// <param name="amount"></param>
         /// <returns></returns>
-        public async Task<Core.Data.TransactionState> Withdraw(string accountId, int type, decimal amount)
+        public async Task<Data.TransactionState> WithdrawAsync(string accountId, decimal amount)
         {
             var account = await _ctx.Accounts.Where(x => x.Id == accountId).FirstOrDefaultAsync();
 
             if (account != null)
             {
                 if (amount < 0)
-                    return Core.Data.TransactionState.Failure;
+                    return Data.TransactionState.Failure;
 
                 if (amount < account.Balance)
                 {
                     account.Balance -= amount;
                     account.UpdatedAt = DateTime.Now;
 
-                    AddTransaction(accountId, type, amount);
+                    AddTransaction(accountId, Data.TransactionType.Withdraw, amount);
 
                     await _ctx.SaveChangesAsync();
                     return Data.TransactionState.Success;
@@ -120,18 +120,18 @@ namespace BankAccount.Core.Services
                     return Data.TransactionState.Failure;
             }
 
-            return Core.Data.TransactionState.Failure;
+            return Data.TransactionState.Failure;
         }
 
-        private void AddTransaction(string accountId, int type, decimal amount)
+        private void AddTransaction(string accountId, Data.TransactionType transactionType, decimal amount)
         {
-            _ctx.Transactions.Add(new Core.Data.Transaction
+            _ctx.Transactions.Add(new Data.Transaction
             {
                 Id = Guid.NewGuid().ToString(),
                 Amount = amount,
                 AccountId = accountId,
                 Date = DateTime.Now,
-                Type = type == (int)Data.TransactionType.Withdraw ? Data.TransactionType.Withdraw : Data.TransactionType.Deposit
+                Type = transactionType
             });
         }
     }

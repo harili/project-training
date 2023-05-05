@@ -68,7 +68,7 @@ namespace BankAccount.Core.Tests
 
             // Act
             var amountToDeposit = 500;
-            var result = _accountService.Deposit(accountId, (int)Data.TransactionType.Deposit, amountToDeposit).GetAwaiter().GetResult();
+            var result = _accountService.DepositAsync(accountId, amountToDeposit).GetAwaiter().GetResult();
             result.ShouldBe(Data.TransactionState.Success);
 
             var newBalance = _accountService.GetBalance(accountId);
@@ -86,7 +86,7 @@ namespace BankAccount.Core.Tests
 
             // Act
             var amountToWithdraw = 500;
-            var result = _accountService.Withdraw(accountId, (int)Data.TransactionType.Deposit, amountToWithdraw).GetAwaiter().GetResult();
+            var result = _accountService.WithdrawAsync(accountId, amountToWithdraw).GetAwaiter().GetResult();
             result.ShouldBe(Data.TransactionState.Success);
 
             var newBalance = _accountService.GetBalance(accountId);
@@ -103,7 +103,7 @@ namespace BankAccount.Core.Tests
             var previousBalance = _accountService.GetBalance(accountId);
             int amount = 540;
 
-            _accountService.Deposit(accountId, (int)Data.TransactionType.Deposit, amount).GetAwaiter().GetResult();
+            _accountService.DepositAsync(accountId, amount).GetAwaiter().GetResult();
 
             // Act
             var actualBalance = _accountService.GetBalance(accountId);
@@ -120,7 +120,7 @@ namespace BankAccount.Core.Tests
             var previousBalance = _accountService.GetBalance(accountId);
             int amount = 540;
 
-            _accountService.Withdraw(accountId, (int)Data.TransactionType.Deposit, amount).GetAwaiter().GetResult();
+            _accountService.WithdrawAsync(accountId, amount).GetAwaiter().GetResult();
 
             // Act
             var actualBalance = _accountService.GetBalance(accountId);
@@ -134,10 +134,10 @@ namespace BankAccount.Core.Tests
         {
             // Arrange
             var accountId = "6be525dd-a552-4b22-8567-45cc0b88f37f";
-            _accountService.Deposit(accountId, (int)Data.TransactionType.Deposit, 1000).GetAwaiter().GetResult();
+            _accountService.DepositAsync(accountId, 1000).GetAwaiter().GetResult();
 
             // Act
-            var transactions = _accountService.GetPreviousTransactions(accountId).GetAwaiter().GetResult();
+            var transactions = _accountService.GetPreviousTransactionsAsync(accountId).GetAwaiter().GetResult();
 
             // Assert
             transactions.Count.ShouldBe(3);
