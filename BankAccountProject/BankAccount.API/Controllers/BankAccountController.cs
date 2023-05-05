@@ -15,7 +15,7 @@ namespace BankAccount.API.Controllers
             _accountService = accountService ?? throw new ArgumentNullException(nameof(accountService));
         }
 
-        [HttpGet("{accountId}/transaction/withdraw")]
+        [HttpPost("{accountId}/transaction/withdraw")]
         public async Task<IActionResult> WithdrawTransactionAsync(string accountId, decimal? amount)
         {
             if (amount == null || amount < 0)
@@ -38,7 +38,7 @@ namespace BankAccount.API.Controllers
 
         }
 
-        [HttpGet("{accountId}/transaction/deposit")]
+        [HttpPost("{accountId}/transaction/deposit")]
         public async Task<IActionResult> DepositTransactionAsync(string accountId, decimal? amount)
         {
             if (amount == null || amount < 0)
@@ -67,7 +67,7 @@ namespace BankAccount.API.Controllers
         }
 
         [HttpGet("{accountId}/transactions")]
-        public async Task<IActionResult> GePreviousTransactions(string accountId, int? type = null)
+        public async Task<IActionResult> GetPreviousTransactions(string accountId, int? type = null)
         {
             if (string.IsNullOrEmpty(accountId))
                 return BadRequest($"{nameof(accountId)} account cannot be null or empty.");
