@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankAccount.Core.Tests
-build_property.ProjectDir = C:\Users\ilies\OneDrive\Bureau\github\project-training\BankAccountProject\BankAccount.Core.Tests\
+build_property.ProjectDir = C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core.Tests\

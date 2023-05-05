@@ -10163,23 +10163,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ilies\\.nuget\\packages\\": {},
+    "C:\\Users\\BehdadKardgar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.API.Tests\\BankAccount.API.Tests.csproj",
+      "projectUniqueName": "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.API.Tests\\BankAccount.API.Tests.csproj",
       "projectName": "BankAccount.API.Tests",
-      "projectPath": "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.API.Tests\\BankAccount.API.Tests.csproj",
-      "packagesPath": "C:\\Users\\ilies\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.API.Tests\\obj\\",
+      "projectPath": "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.API.Tests\\BankAccount.API.Tests.csproj",
+      "packagesPath": "C:\\Users\\BehdadKardgar\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.API.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ilies\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BehdadKardgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10188,18 +10188,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.API\\BankAccount.API.csproj": {
-              "projectPath": "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.API\\BankAccount.API.csproj"
+            "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.API\\BankAccount.API.csproj": {
+              "projectPath": "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.API\\BankAccount.API.csproj"
             },
-            "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.Core\\BankAccount.Core.csproj": {
-              "projectPath": "C:\\Users\\ilies\\OneDrive\\Bureau\\github\\project-training\\BankAccountProject\\BankAccount.Core\\BankAccount.Core.csproj"
+            "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.Core\\BankAccount.Core.csproj": {
+              "projectPath": "C:\\Dev\\Training\\Microservices\\project-training\\BankAccountProject\\BankAccount.Core\\BankAccount.Core.csproj"
             }
           }
         }
@@ -10263,7 +10262,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

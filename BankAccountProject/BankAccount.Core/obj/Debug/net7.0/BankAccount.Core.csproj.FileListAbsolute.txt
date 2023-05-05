@@ -38,3 +38,17 @@ C:\Users\ilies\OneDrive\Bureau\github\project-training\BankAccountProject\BankAc
 C:\Users\ilies\OneDrive\Bureau\github\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.pdb
 C:\Users\ilies\OneDrive\Bureau\github\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.genruntimeconfig.cache
 C:\Users\ilies\OneDrive\Bureau\github\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\ref\BankAccount.Core.dll
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.deps.json
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.runtimeconfig.json
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.dll
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\bin\Debug\net7.0\BankAccount.Core.pdb
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.csproj.AssemblyReference.cache
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.AssemblyInfoInputs.cache
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.AssemblyInfo.cs
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.csproj.CoreCompileInputs.cache
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.dll
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\refint\BankAccount.Core.dll
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.pdb
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\BankAccount.Core.genruntimeconfig.cache
+C:\Dev\Training\Microservices\project-training\BankAccountProject\BankAccount.Core\obj\Debug\net7.0\ref\BankAccount.Core.dll

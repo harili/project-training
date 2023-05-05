@@ -131,6 +131,7 @@
           "Microsoft.Extensions.Caching.Abstractions.Reference": "7.0.0.0",
           "Microsoft.Extensions.Caching.Memory.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions.Reference": "7.0.0.0",
+          "Microsoft.Extensions.Configuration.Binder.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.CommandLine.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables.Reference": "7.0.0.0",
@@ -151,6 +152,7 @@
           "Microsoft.Extensions.FileProviders.Physical.Reference": "7.0.0.0",
           "Microsoft.Extensions.FileSystemGlobbing.Reference": "7.0.0.0",
           "Microsoft.Extensions.Hosting.Abstractions.Reference": "7.0.0.0",
+          "Microsoft.Extensions.Hosting.Reference": "7.0.0.0",
           "Microsoft.Extensions.Http": "7.0.0.0",
           "Microsoft.Extensions.Identity.Core": "7.0.0.0",
           "Microsoft.Extensions.Identity.Stores": "7.0.0.0",
@@ -167,6 +169,7 @@
           "Microsoft.Extensions.ObjectPool": "7.0.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions.Reference": "7.0.0.0",
           "Microsoft.Extensions.Options.DataAnnotations": "7.0.0.0",
+          "Microsoft.Extensions.Options.Reference": "7.0.0.0",
           "Microsoft.Extensions.Primitives.Reference": "7.0.0.0",
           "Microsoft.Extensions.WebEncoders": "7.0.0.0",
           "Microsoft.JSInterop": "7.0.0.0",
@@ -198,6 +201,7 @@
           "System.Data": "4.0.0.0",
           "System.Diagnostics.Contracts": "7.0.0.0",
           "System.Diagnostics.Debug.Reference": "7.0.0.0",
+          "System.Diagnostics.DiagnosticSource.Reference": "7.0.0.0",
           "System.Diagnostics.EventLog.Reference": "7.0.0.0",
           "System.Diagnostics.FileVersionInfo": "7.0.0.0",
           "System.Diagnostics.Process": "7.0.0.0",
@@ -580,9 +584,6 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.323.6910"
           }
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.CommandLine/7.0.0": {
@@ -687,9 +688,6 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.323.6910"
           }
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.Extensions.Hosting.dll": {}
         }
       },
       "Microsoft.Extensions.Hosting.Abstractions/7.0.0": {
@@ -766,9 +764,6 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.323.6910"
           }
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Options.ConfigurationExtensions/7.0.0": {
@@ -1617,17 +1612,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Diagnostics.DiagnosticSource/7.0.1": {
-        "runtime": {
-          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.323.6910"
-          }
-        },
-        "compile": {
-          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {}
-        }
-      },
+      "System.Diagnostics.DiagnosticSource/7.0.1": {},
       "System.Diagnostics.EventLog/7.0.0": {},
       "System.Diagnostics.Tools/4.3.0": {
         "dependencies": {
@@ -2892,6 +2877,12 @@
         },
         "compileOnly": true
       },
+      "Microsoft.Extensions.Configuration.Binder.Reference/7.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "compileOnly": true
+      },
       "Microsoft.Extensions.Configuration.CommandLine.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Configuration.CommandLine.dll": {}
@@ -3012,6 +3003,12 @@
         },
         "compileOnly": true
       },
+      "Microsoft.Extensions.Hosting.Reference/7.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Hosting.dll": {}
+        },
+        "compileOnly": true
+      },
       "Microsoft.Extensions.Http/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Http.dll": {}
@@ -3105,6 +3102,12 @@
       "Microsoft.Extensions.Options.DataAnnotations/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Options.DataAnnotations.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Options.Reference/7.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Options.dll": {}
         },
         "compileOnly": true
       },
@@ -3291,6 +3294,12 @@
       "System.Diagnostics.Debug.Reference/7.0.0.0": {
         "compile": {
           "System.Diagnostics.Debug.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.DiagnosticSource.Reference/7.0.0.0": {
+        "compile": {
+          "System.Diagnostics.DiagnosticSource.dll": {}
         },
         "compileOnly": true
       },
@@ -5758,6 +5767,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.Extensions.Configuration.Binder.Reference/7.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.Extensions.Configuration.CommandLine.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5858,6 +5872,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.Extensions.Hosting.Reference/7.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.Extensions.Http/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5934,6 +5953,11 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Options.DataAnnotations/7.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Options.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6089,6 +6113,11 @@
       "sha512": ""
     },
     "System.Diagnostics.Debug.Reference/7.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.DiagnosticSource.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
