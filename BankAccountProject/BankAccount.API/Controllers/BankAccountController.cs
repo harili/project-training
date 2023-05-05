@@ -67,7 +67,7 @@ namespace BankAccount.API.Controllers
         }
 
         [HttpGet("{accountId}/transactions")]
-        public async Task<IActionResult> GetPreviousTransactions(string accountId, int? type = null)
+        public async Task<IActionResult> GetPreviousTransactionsAsync(string accountId, int? type = null)
         {
             if (string.IsNullOrEmpty(accountId))
                 return BadRequest($"{nameof(accountId)} account cannot be null or empty.");
